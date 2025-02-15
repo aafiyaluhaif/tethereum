@@ -26,24 +26,24 @@ export default function TopStories() {
 
   return (
     <motion.div
-      initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      initial={{ y: 100, scale: 0.8, rotateX: 45, opacity: 1 }}
+      whileInView={{ y: 0, scale: 1, rotateX: 0, opacity: 1 }}
+      viewport={{ once: false, amount: 0.5 }} // Triggers animation when 20% of it is visible
+      transition={{ duration: 1.5, ease: 'easeInOut' }}
+      className='mt-20 border-4 border-[#26262680] w-full origin-top'
     >
-      <div className=' mt-20  border-4 border-[#26262680] w-full'>
-        {/* TradingView Widget Container */}
-        <div id='tradingview-container'></div>
+      {/* TradingView Widget Container */}
+      <div id='tradingview-container'></div>
 
-        {/* TradingView Copyright */}
-        <div className='tradingview-widget-copyright'>
-          <a
-            href='https://www.tradingview.com/'
-            rel='noopener nofollow'
-            target='_blank'
-          >
-            <span className='text-white'>Track all markets on TradingView</span>
-          </a>
-        </div>
+      {/* TradingView Copyright */}
+      <div className='tradingview-widget-copyright'>
+        <a
+          href='https://www.tradingview.com/'
+          rel='noopener nofollow'
+          target='_blank'
+        >
+          <span className='text-white'>Track all markets on TradingView</span>
+        </a>
       </div>
     </motion.div>
   );

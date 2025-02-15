@@ -8,10 +8,11 @@ const Footer = () => {
       <h2 className='text-lg md:text-2xl font-light mb-4'>
         We’re just making sure it’s nice and clean!
       </h2>
-
-      <button className='bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition'>
-        WHITEPAPER
-      </button>
+      <Link href={'http://whitepaper.tethereum.net/TETHEREUM-WHITEPAPER.pdf'}>
+        <button className='bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition'>
+          WHITEPAPER
+        </button>
+      </Link>
 
       <div className='flex flex-col md:flex-row justify-between  mt-10 px-10'>
         {/* Logo and Social Icons */}
