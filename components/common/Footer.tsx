@@ -10,7 +10,7 @@ const Footer = () => {
         <h2 className='lg:text-lg text-base  font-light mb-4'>
           Community, Utility, Vision — Tethereum has it all.
         </h2>
-        <Link href={'http://whitepaper.tethereum.net/TETHEREUM-WHITEPAPER.pdf'}>
+        <Link href={'/TETHEREUM-WHITEPAPER.pdf'}>
           <Button className='bg-white shadow-md text-lg text-black rounded-xl lg:p-6 p-4 w-fit mt-4'>
             Whitepaper
           </Button>
@@ -30,19 +30,22 @@ const Footer = () => {
               className='lg:h-10 h-full w-auto object-cover'
             />
             <div className='flex space-x-6 justify-center items-center lg:mt-2 mt-4'>
-              <Link href='https://facebook.com' target='_blank'>
+              <Link href='https://facebook.com/TethereumToken' target='_blank'>
                 <Facebook className='w-5 h-5 text-white hover:text-blue-500 transition' />
               </Link>
-              <Link href='https://twitter.com' target='_blank'>
+              <Link href='https://x.com/TethereumToken' target='_blank'>
                 <Twitter className='w-5 h-5 text-white hover:text-blue-400 transition' />
               </Link>
-              <Link href='https://telegram.org' target='_blank'>
+              <Link href='https://t.me/tethereumtoken' target='_blank'>
                 <Send className='w-5 h-5 text-white hover:text-blue-300 transition' />
               </Link>
-              <Link href='https://instagram.com' target='_blank'>
+              <Link href='https://instagram.com/TethereumToken' target='_blank'>
                 <Instagram className='w-5 h-5 text-white hover:text-pink-500 transition' />
               </Link>
-              <Link href='https://youtube.com' target='_blank'>
+              <Link
+                href='https://www.youtube.com/@TethereumToken'
+                target='_blank'
+              >
                 <Youtube className='w-5 h-5 text-white hover:text-red-500 transition' />
               </Link>
             </div>
