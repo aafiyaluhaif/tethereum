@@ -2,31 +2,34 @@ import React from 'react';
 import Link from 'next/link'; // Import Link from Next.js
 import Image from 'next/image';
 import { Facebook, Twitter, Send, Instagram, Youtube } from 'lucide-react';
+import { Button } from '../ui/button';
 const Footer = () => {
   return (
     <footer className='bg-black text-white py-10 text-center'>
-      <h2 className='text-lg md:text-2xl font-light mb-4'>
-        We’re just making sure it’s nice and clean!
-      </h2>
-      <Link href={'http://whitepaper.tethereum.net/TETHEREUM-WHITEPAPER.pdf'}>
-        <button className='bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition'>
-          WHITEPAPER
-        </button>
-      </Link>
+      <div>
+        <h2 className='lg:text-lg text-base  font-light mb-4'>
+          Community, Utility, Vision — Tethereum has it all.
+        </h2>
+        <Link href={'http://whitepaper.tethereum.net/TETHEREUM-WHITEPAPER.pdf'}>
+          <Button className='bg-white shadow-md text-lg text-black rounded-xl lg:p-6 p-4 w-fit mt-4'>
+            Whitepaper
+          </Button>
+        </Link>
+      </div>
 
       <div className='flex flex-col md:flex-row justify-between  mt-10 px-10'>
         {/* Logo and Social Icons */}
-        <div className='text-center md:text-left'>
-          <div className='flex flex-col  space-x-3'>
+        <div className='text-center'>
+          <div className='flex flex-col  '>
             <Image
-              src={'/logo.png'}
+              src={'/logo1.png'}
               alt='logo'
               sizes='100vw'
               height={0}
               width={0}
-              className='h-10 w-auto'
+              className='lg:h-10 h-full w-auto object-cover'
             />
-            <div className='flex space-x-6 justify-center items-center mt-2'>
+            <div className='flex space-x-6 justify-center items-center lg:mt-2 mt-4'>
               <Link href='https://facebook.com' target='_blank'>
                 <Facebook className='w-5 h-5 text-white hover:text-blue-500 transition' />
               </Link>
@@ -68,28 +71,16 @@ const Footer = () => {
           <h3 className='text-lg font-semibold mb-2'>Important Links</h3>
           <ul className='space-y-1 text-gray-400'>
             <li>
-              <Link href='/' className='hover:text-white'>
-                Home
+              <Link
+                href='https://linktr.ee/Tethereum'
+                className='hover:text-white'
+              >
+                Linktree
               </Link>
             </li>
             <li>
-              <Link href='/about' className='hover:text-white'>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href='/swap' className='hover:text-white'>
-                Launch Swap
-              </Link>
-            </li>
-            <li>
-              <Link href='/p2p' className='hover:text-white'>
-                P2P Plus
-              </Link>
-            </li>
-            <li>
-              <Link href='/docs' className='hover:text-white'>
-                Documentation
+              <Link href='#faq' className='hover:text-white'>
+                Faq
               </Link>
             </li>
           </ul>

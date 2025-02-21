@@ -16,20 +16,13 @@ export default function Home() {
       {/* Background Particles */}
       <ParticlesComponent />
 
-      {/* Navbar (Ensured to be Above Particles) */}
-      <div className='relative z-10 container-box  w-full'>
+      <div className='relative z-10 lg:px-[200px] px-[30px] pt-5 '>
         <Navbar />
         <Hero />
         <TopStories />
         <Binance />
         <Tailored />
-        {/* <Help />
-        <Logo /> */}
-      </div>
-      {/* <div className='relative z-10 w-full'>
         <FAQ />
-      </div> */}
-      <div className='relative z-10 w-full container-box'>
         <Footer />
       </div>
     </div>

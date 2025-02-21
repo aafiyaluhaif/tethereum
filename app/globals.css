@@ -69,12 +69,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
-.container-box {
-  padding-left: 200px;
-  padding-right: 200px;
-  width: 100%;
-  padding-top: 40px;
-}
+
 @keyframes gradientText {
   0% {
     background-position: 0% 50%;

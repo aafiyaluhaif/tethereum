@@ -10,16 +10,15 @@ import React from 'react';
 const Tailored = () => {
   return (
     <div className='container-2  mt-28 '>
-      <div className='px-40 flex flex-col items-center justify-center text-center'>
+      <div className='lg:px-40 px-0 flex flex-col items-center justify-center text-center'>
         <h2 className='text-3xl font-bold'>Tailored for BNBCHAIN</h2>
         <p className='text-[#a3a3a3] mt-1'>
-          {' '}
           Seamless integration with world’s leading Blockchain
         </p>
       </div>
       <div className='grid grid-cols-12  gap-5 mt-10'>
-        <div className=' col-span-7 '>
-          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg h-[300px] border border-white/20'>
+        <div className=' lg:col-span-7 col-span-12 '>
+          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg lg:h-[300px] h-[400px] border border-white/20'>
             <div className='flex  flex-col gap-5'>
               {/* AI Icon (Replace with an actual icon if needed) */}
               <CircleDollarSign
@@ -46,8 +45,8 @@ const Tailored = () => {
             </div>
           </div>
         </div>
-        <div className=' col-span-5 '>
-          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg h-[300px] border border-white/20'>
+        <div className=' lg:col-span-5 col-span-12 '>
+          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg h-[300px]  border border-white/20'>
             <div className='flex  flex-col gap-5'>
               {/* AI Icon (Replace with an actual icon if needed) */}
               <Workflow
@@ -73,7 +72,7 @@ const Tailored = () => {
         </div>
       </div>
 
-      <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg h-[300px] border border-white/20 mt-10'>
+      <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg lg:h-[300px] h-[350px] border border-white/20 mt-10'>
         <div className='flex  flex-col gap-5'>
           {/* AI Icon (Replace with an actual icon if needed) */}
           <Link
@@ -98,8 +97,8 @@ const Tailored = () => {
       </div>
 
       <div className='grid grid-cols-12  gap-5 mt-10'>
-        <div className=' col-span-5 '>
-          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg h-[300px] border border-white/20'>
+        <div className=' lg:col-span-5 col-span-12 '>
+          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg lg:h-[300px] h-[350px] border border-white/20'>
             <div className='flex  flex-col gap-5'>
               <Github
                 size={50}
@@ -123,8 +122,8 @@ const Tailored = () => {
             </div>
           </div>
         </div>
-        <div className=' col-span-7 '>
-          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg h-[300px] border border-white/20'>
+        <div className=' lg:col-span-7 col-span-12  '>
+          <div className=' p-10 bg-black backdrop-blur-3xl rounded-2xl shadow-lg lg:h-[300px] h-[350px] border border-white/20'>
             <div className='flex  flex-col gap-5'>
               <ArrowRightLeft
                 size={50}
