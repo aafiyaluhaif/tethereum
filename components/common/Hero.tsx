@@ -11,7 +11,7 @@ const Hero = () => {
       transition={{ duration: 1.5 }}
     >
       <div className='container-2 text-center mt-14 lg:px-40 px-0 flex flex-col items-center justify-center'>
-        <h1 className='lg:text-6xl text-3xl xl:text-2xl  font-bold lg:leading-[80px] leading-[30px]'>
+        <h1 className='lg:text-6xl text-3xl   font-bold lg:leading-[80px] leading-[30px]'>
           The Smart Navigator for BNB Chain
         </h1>
         <Link href={'./TETHEREUM-WHITEPAPER.pdf'}>

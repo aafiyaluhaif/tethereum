@@ -21,7 +21,7 @@ const Footer = () => {
         {/* Logo and Social Icons */}
         <div className='text-center'>
           <div className='flex flex-col  '>
-            <Image
+            <img
               src={'/logo1.png'}
               alt='logo'
               sizes='100vw'

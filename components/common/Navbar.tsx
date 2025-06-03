@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className='backdrop-blur-md shadow-lg w-full bg-[#262626b3] border border-[#26262680] rounded-xl px-4 py-5 flex flex-row justify-between items-center'>
       {/* Logo */}
       <div>
-        <Image
+        <img
           src={'/logo1.png'}
           alt='logo'
           width={0}

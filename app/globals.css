@@ -92,3 +92,14 @@ body {
   animation: gradientText 1s infinite linear;
   padding: 0;
 }
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

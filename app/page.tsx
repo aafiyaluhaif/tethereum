@@ -1,14 +1,18 @@
 import Binance from '@/components/common/Binance';
 import FAQ from '@/components/common/Faq';
 import Footer from '@/components/common/Footer';
-import Help from '@/components/common/Help';
 import Hero from '@/components/common/Hero';
-import Logo from '@/components/common/Logo';
 import Navbar from '@/components/common/Navbar';
 import ParticlesComponent from '@/components/common/Particles';
-import ParticlesBackground from '@/components/common/Particles';
 import Tailored from '@/components/common/Tailored';
 import TopStories from '@/components/common/TopStories';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Tethereum',
+  description:
+    "Community, Utility, Vision — #Tethereum has it all. We're on a mission to become the world's most recognized and utilized #crypto.",
+};
 
 export default function Home() {
   return (
