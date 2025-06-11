@@ -10,7 +10,7 @@ const Footer = () => {
         <h2 className='lg:text-lg text-base  font-light mb-4'>
           Community, Utility, Vision — Tethereum has it all.
         </h2>
-        <Link href={'/TETHEREUM-WHITEPAPER.pdf'}>
+        <Link href={'/TETHEREUM-WHITEPAPER.pdf'} target='_blank'>
           <Button className='bg-white shadow-md text-lg text-black rounded-xl lg:p-6 p-4 w-fit mt-4'>
             Whitepaper
           </Button>
